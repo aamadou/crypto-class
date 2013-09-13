@@ -5,7 +5,7 @@ end
 
 # converts a string to a hexadecimal string ex: "hello" -> "68656c6c6f"
 def str_to_hex(s)
-  s.bytes.map{ |b| b.to_s(16) }.join
+  s.bytes.map{ |b| "%02x" % b }.join
 end
 
 # returns a string which is the byte-wise xor of two strings, s1 and s2
