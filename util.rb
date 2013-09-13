@@ -3,7 +3,7 @@ def hex_to_str(h):
   [h].pack('H*')
 end
 
-/* returns a string which is the byte-wise xor of two s1 and s2 */
+/* returns a string which is the byte-wise xor of two strings, s1 and s2 */
 def str_xor(s1, s2):
   if s1.length != s2.length:
     maxlen = [s1, s2].map(&length).max
