@@ -19,6 +19,7 @@ def str_xor(s1, s2)
   s1.bytes.zip(s2.bytes).map{ |b1, b2| b1 ^ b2 }.map(&:chr).join
 end
 
+# converts a character to its byte value, ex: 'a' -> 97
 def ord(char)
-  char.unpack('c').first
+  char.bytes.first
 end
