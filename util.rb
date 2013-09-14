@@ -14,7 +14,6 @@ def str_xor(s1, s2)
     minlen = [s1, s2].map(&:length).min
     s1 = s1[0...minlen]
     s2 = s2[0...minlen]
-    puts minlen
   end
   s1.bytes.zip(s2.bytes).map{ |b1, b2| b1 ^ b2 }.map(&:chr).join
 end
